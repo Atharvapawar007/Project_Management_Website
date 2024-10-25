@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat Interface</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chat</h2>
+            <span class="status">Online</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input-field" placeholder="Type a message...">
+            <button id="emoji-button">😊</button>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div class="emoji-picker" id="emoji-picker">
+            <span onclick="addEmoji('😊')">😊</span>
+            <span onclick="addEmoji('😂')">😂</span>
+            <span onclick="addEmoji('❤️')">❤️</span>
+            <span onclick="addEmoji('👍')">👍</span>
+            <span onclick="addEmoji('😮')">😮</span>
+            <span onclick="addEmoji('😢')">😢</span>
+            <span onclick="addEmoji('🎉')">🎉</span>
+            
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

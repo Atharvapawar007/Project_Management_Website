@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+            color: white;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 50px;
+        }
+
+        #part2 {
+            display: flex;
+            gap: 50px;
+        }
+
+        #logo-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #logo-container img {
+            max-width: 70%; 
+            height: auto;
+            transition: box-shadow 0.3s ease; 
+        }
+
+        #logo-container img:hover {
+            box-shadow: 0 0 15px 5px rgba(255, 0, 255, 0.8);
+        }
+
+        h1 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h2>ABC Company</h2>
+        <div id="part2">
+            <h4 onclick="location.href='index.html'">Login</h4>
+            <h4>About</h4>
+            <h4>Platforms</h4>
+            <h4>Contact</h4>
+        </div>
+    </div>
+    <div id="logo-container">
+        <img src="logo.jpeg" alt="Company Logo">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var tl = gsap.timeline();
+
+        tl.from("h2", {
+            y: -30,
+            opacity: 0,
+            duration: 1,
+            delay: 0.5,
+        });
+        tl.from("h4", {
+            y: -30,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.3,
+        });
+        tl.from("h1", {
+            y: 20,
+            opacity: 0,
+            duration: 0.5,
+            scale: 0.2,
+        });
+        tl.from("#logo-container img", {
+            y: 20,
+            opacity: 0,
+            duration: 0.5,
+            scale: 0.2,
+        });
+    </script>
+</body>
+</html>

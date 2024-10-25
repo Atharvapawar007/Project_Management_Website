@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrange Zoom Meeting</title>
+    <link rel="stylesheet" href="meeting.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arrange Zoom Meeting</h1>
+        <form id="meetingForm">
+            <label for="meetingTitle">Meeting Title:</label>
+            <input type="text" id="meetingTitle" name="meetingTitle" required>
+
+            <label for="meetingDate">Date:</label>
+            <input type="date" id="meetingDate" name="meetingDate" required>
+
+            <label for="meetingTime">Time:</label>
+            <input type="time" id="meetingTime" name="meetingTime" required>
+
+            <label for="meetingDuration">Duration (minutes):</label>
+            <input type="number" id="meetingDuration" name="meetingDuration" required>
+
+            <label for="meetingDescription">Description:</label>
+            <textarea id="meetingDescription" name="meetingDescription" rows="4" required></textarea>
+
+            <button type="button" onclick="generateZoomLink()">Generate Zoom Link</button>
+        </form>
+        <div id="zoomLinkContainer"></div>
+    </div>
+    <script src="meeting.js"></script>
+</body>
+</html>

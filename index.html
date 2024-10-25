@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>ABC company</h1>
+        <h3>Enter your login credentials</h3>
+        <form action="">
+              <label for="first">
+                    Username:
+              </label>
+              <input type="text" 
+                     id="first" 
+                     name="first" 
+                     placeholder="Enter your Username" required>
+
+              <label for="password">
+                    Password:
+              </label>
+              <input type="password"
+                     id="password" 
+                     name="password"
+                     placeholder="Enter your Password" required>
+
+              <div class="wrap">
+                    <button type="submit"
+                            onclick="location.href='second_page.html'">
+                          Submit
+                    </button>
+              </div>
+        </form>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

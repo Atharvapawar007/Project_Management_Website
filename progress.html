@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Task Progress Tracker</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Team Task Progress Tracker 🌟</h1>
+            <p>Track your team's progress efficiently and stay on top of your goals.</p>
+        </header>
+
+        <div id="tasks">
+            <div class="task">
+                <h3>Task 1: Project Planning</h3>
+                <p>Creating a detailed plan for the upcoming project.</p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress1"></div>
+                </div>
+                <label><input type="checkbox" id="done1" onclick="markDone(1)"> Done</label>
+            </div>
+            <div class="task">
+                <h3>Task 2: Design Phase</h3>
+                <p>Developing the design and mockups for the project.</p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress2"></div>
+                </div>
+                <label><input type="checkbox" id="done2" onclick="markDone(2)"> Done</label>
+            </div>
+            <div class="task">
+                <h3>Task 3: Development</h3>
+                <p>Implementing the design into a functional product.</p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress3"></div>
+                </div>
+                <label><input type="checkbox" id="done3" onclick="markDone(3)"> Done</label>
+            </div>
+            <div class="task">
+                <h3>Task 4: Testing</h3>
+                <p>Testing the product to ensure quality and functionality.</p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress4"></div>
+                </div>
+                <label><input type="checkbox" id="done4" onclick="markDone(4)"> Done</label>
+            </div>
+            <div class="task">
+                <h3>Task 5: Deployment</h3>
+                <p>Releasing the final product to the end users.</p>
+                <div class="progress-bar">
+                    <div class="progress" id="progress5"></div>
+                </div>
+                <label><input type="checkbox" id="done5" onclick="markDone(5)"> Done</label>
+            </div>
+        </div>
+
+        <button onclick="location.href='second_page.html'">Update All Progress</button>
+
+        <footer>
+            <p>© 2024 Team Tracker. All rights reserved.</p>
+            <p>Powered by <a href="https://example.com">ABC Company</a></p>
+        </footer>
+    </div>
+
+    <script src="progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Project</title>
+    <link rel="stylesheet" href="new_project.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create Project</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+            <div class="form-group">
+                <label for="teamMembers">Team Members (IDs):</label>
+                <textarea id="teamMembers" name="teamMembers" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="create-btn" onclick="location.href='second_page.html'">Create Project</button>
+        </form>
+    </div>
+</body>
+</html>

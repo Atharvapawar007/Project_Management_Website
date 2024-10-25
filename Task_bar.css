@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/jpeg;base64,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') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    background-image: url(https://www.shutterstock.com/image-illustration/futuristic-minimal-tech-blue-halftones-600nw-2480480455.jpg);
+  }
+  .container {
+    max-width: 450px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f2f2f2;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"] {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  input[type="text"]::placeholder {
+    color: #ddd;
+  }
+  
+  input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  #Add-Task {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+  }
+  
+  #Add-Task:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+  }
+  
+  .err {
+    color: #ff6961;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .task-list input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  
+  .task-list button {
+    background-color: #ff5e5e;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .task-list button:hover {
+    background-color: #e60000;
+  }
+  
